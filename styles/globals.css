@@ -1,0 +1,16 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --font-Rye: 'Rye', sans-serif;
+  --font-Montserrat: 'Montserrat', sans-serif;
+}
+
+.font-Rye {
+  font-family: var(--font-Rye);
+}
+
+.font-Montserrat {
+  font-family: var(--font-Montserrat);
+}
