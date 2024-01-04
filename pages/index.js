@@ -1,5 +1,7 @@
 import BarberCard from "../components/Barbers.js";
-import star from "../public/icons/star.svg";
+import Header from "../components/Header.js";
+import Footer from "../components/Footer.js";
+
 function Home() {
   return (
     <>
@@ -14,24 +16,7 @@ function Home() {
               backgroundPosition: "center",
             }}
           ></div>
-          <header className="w-full flex flex-col justify-center xl:items-center mt-5 relative">
-            <nav className="w-[50%] z-10 hidden xl:block">
-              <ul className="flex justify-between">
-                <li className="text-3xl text-white font-semibold font-Montserrat">
-                  Home
-                </li>
-                <li className="text-3xl text-white font-semibold font-Montserrat">
-                  Haircuts
-                </li>
-              </ul>
-            </nav>
-            <h2 className="pl-6 text-3xl xl:text-6xl font-bold flex items-center font-Rye relative z-10">
-              Ali Kapper
-            </h2>
-            <div className="xl:hidden h-12 w-12 absolute right-6  cursor-pointer">
-              <img src="/icons/burger.svg" alt="" />
-            </div>
-          </header>
+          <Header/>
           <div className="h-[80%] w-[100%] flex items-center justify-center relative z-10">
             <div className="h-[70%] w-[70%] flex flex-col justify-center items-center gap-[25px]">
               <h1 className="font-Rye text-6xl text-white text-center">
@@ -80,23 +65,33 @@ function Home() {
           }}
         ></div>
         <div className="h-full lg:w-[40%]  flex items-center justify-center">
-          <div className="h-[70%] w-[85%]  flex flex-col items-center justify-evenly">
-            <img src="/icons/comb.png" alt="" className="h-[3rem] transform rotate-90" />
-            <p className="font-Rye text-4xl lg:text-6xl text-[#595959] text-center">
-              About Us
-            </p>
-            <img src="/icons/star.svg" alt="" className="h-[4rem] lg:h-[8rem]" />
+          <div className="h-[90%] lg:h-[70%] w-[85%]   flex flex-col items-center justify-evenly">
+            <div className="h-[50%] flex flex-col items-center justify-between">
+              <img
+                src="/icons/comb.png"
+                alt=""
+                className="h-[3rem] transform rotate-90"
+              />
+              <p className="font-Rye text-4xl lg:text-6xl text-[#595959] text-center">
+                About Us
+              </p>
+              <img
+                src="/icons/star.svg"
+                alt=""
+                className="h-[4rem] lg:h-[8rem]"
+              />
+            </div>
             <div className="flex flex-col justify-between h-[50%]">
-              <p className="text-sm lg:text-2xl font-semibold text-center lg:text-left font-Montserrat">
+              <p className="text-lg lg:text-2xl font-semibold text-center lg:text-left font-Montserrat">
                 From childhood, we have embraced this profession. We learned not
                 only to do, but to perfect!
               </p>
-              <p className="text-sm lg:text-2xl font-semibold text-center lg:text-left font-Montserrat">
+              <p className="text-lg lg:text-2xl font-semibold text-center lg:text-left font-Montserrat">
                 Beginning in the Middle East and continuing to Europe, putting
                 together both Western and Eastern styles in their own unique
                 ways and with excellent results!
               </p>
-              <p className="text-sm lg:text-2xl font-semibold text-center lg:text-left font-Montserrat">
+              <p className="text-lg lg:text-2xl font-semibold text-center lg:text-left font-Montserrat">
                 Want to book an appointment? <br></br>
                 call <span className="text-[#AB9950]">050 208 70 59</span>
               </p>
@@ -142,13 +137,27 @@ function Home() {
           backgroundSize: "cover",
         }}
       >
-        <div className="h-[60%] w-[80%] bg-white flex flex-col lg:flex-row">
-          <div className="h-full lg:w-[50%] bg-blue-200"></div>
+        <div className="h-[80%] lg:h-[60%] w-[80%] bg-white flex flex-col lg:flex-row">
+          <div className="h-full lg:w-[50%]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d71542.08443767844!2d44.36761633365026!3d33.344881742159636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2siq!4v1704402778082!5m2!1sen!2siq"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
           <div className="h-full lg:w-[50%] flex flex-col items-center justify-around">
             <div className="h-[7rem] w-[7rem] lg:h-[10rem] lg:w-[10rem] bg-[#AB9950] rounded-full flex items-center justify-center">
-            <img src="/icons/phone.png" alt="" className="h-12 w-12"/>
+              <img src="/icons/phone.png" alt="" className="h-12 w-12" />
             </div>
-            <img src="/icons/star.svg" alt="" className="h-[4rem] lg:h-[8rem]" />
+            <img
+              src="/icons/star.svg"
+              alt=""
+              className="h-[4rem] lg:h-[8rem]"
+            />
             <div className="h-[50%] w-[70%] lg:w-[90%] flex flex-col justify-around">
               <p className="font-Rye text-4xl lg:text-6xl text-[#595959] text-center">
                 Book an Appointment
@@ -164,74 +173,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="h-[60rem] bg-[#595959] flex flex-col gap-5 justify-center items-center">
-        <div className="h-[90%] w-[60%] ">
-          <div className="h-[80%] w-full flex">
-            <div className="w-[50%] flex flex-col justify-around">
-              <div className="h-[15%] flex flex-col justify-between items-start">
-                <h1 className="font-Rye text-6xl text-white text-center">
-                  Ali Kapper
-                </h1>
-                <p className=" text-2xl lg:text-xl text-white font-Montserrat text-center">
-                  BarberShop & HairSalon
-                </p>
-              </div>
-              <p className="text-2xl lg:text-xl text-white font-Montserrat">
-                lorem12 lorem12 lorem12 lore12asmk ads admsiasdwi
-                <br />
-                lorem edsdqdwid wdj 12
-              </p>
-              <div className="h-[20%] flex flex-col justify-between">
-                <div>
-                  <p className="text-2xl lg:text-xl font-semibold text-white font-Montserrat flex gap-12">
-                    WhatsApp <span className="text-[#AB9950]">07722270660</span>
-                  </p>
-                  <p className="text-2xl lg:text-xl font-semibold text-white font-Montserrat flex gap-12">
-                    TelePhone{" "}
-                    <span className="text-[#AB9950]">07722270660</span>
-                  </p>
-                </div>
-                <p className="text-2xl lg:text-xl font-semibold text-white font-Montserrat flex gap-12">
-                  Email-address{" "}
-                  <span className="text-[#AB9950]">AliKapper@outlook.com</span>
-                </p>
-              </div>
-            </div>
-            <div className="h-full w-[50%] flex items-center">
-              <div className="h-[60%] w-full flex flex-col items-center justify-around">
-                <p className="text-2xl lg:text-xl font-semibold text-white font-Montserrat">
-                  Opening Hours
-                </p>
-                <div>
-                  <p className="text-2xl lg:text-2xl font-semibold text-white font-Montserrat flex gap-12">
-                    Monday <span>09:00 - 12:00</span>
-                  </p>
-                  <p className="text-2xl lg:text-2xl font-semibold text-white font-Montserrat flex gap-12">
-                    Monday <span>09:00 - 12:00</span>
-                  </p>
-                  <p className="text-2xl lg:text-2xl font-semibold text-white font-Montserrat flex gap-12">
-                    Monday <span>09:00 - 12:00</span>
-                  </p>
-                  <p className="text-2xl lg:text-2xl font-semibold text-white font-Montserrat flex gap-12">
-                    Monday <span>09:00 - 12:00</span>
-                  </p>
-                  <p className="text-2xl lg:text-2xl font-semibold text-white font-Montserrat flex gap-12">
-                    Monday <span>09:00 - 12:00</span>
-                  </p>
-                  <p className="text-2xl lg:text-2xl font-semibold text-white font-Montserrat flex gap-12">
-                    Monday <span>09:00 - 12:00</span>
-                  </p>
-                  <p className="text-2xl lg:text-2xl font-semibold text-white font-Montserrat flex gap-12">
-                    Monday <span>09:00 - 12:00</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="h-[20%] w-full bg-yellow-200"></div>
-        </div>
-        <hr class="line" />
-      </div>
+      <Footer/>
     </>
   );
 }
