@@ -14,3 +14,12 @@
 .font-Montserrat {
   font-family: var(--font-Montserrat);
 }
+html{
+  font-size: 10px;
+}
+.line {
+  height: 0.2rem;
+  width: 100%;
+  background-color: #AB9950;
+  border: none;
+}
