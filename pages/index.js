@@ -19,7 +19,7 @@ function Home() {
           <Header/>
           <div className="h-[80%] w-[100%] flex items-center justify-center relative z-10">
             <div className="h-[70%] w-[70%] flex flex-col justify-center items-center gap-[25px]">
-              <h1 className="font-Rye text-6xl text-white text-center">
+              <h1 className="font-Rye text-8xl text-white text-center">
                 Ali Kapper
               </h1>
               <p className=" text-2xl lg:text-4xl text-white font-Montserrat text-center">
