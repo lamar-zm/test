@@ -5,7 +5,7 @@ function Footer() {
         <div className="h-full lg:h-[90%] w-[60%]">
           <div className="h-full lg:h-[80%] w-full flex flex-col lg:flex-row items-center justify-center">
             <div className="h-[40%] lg:h-[80%] w-full lg:w-[50%] flex flex-col justify-around items-center">
-              <div className="h-[18%] flex flex-col justify-between items-start">
+              <div className="h-[22%] lg:h-[18%] flex flex-col justify-between items-start">
                 <h1 className="font-Rye text-6xl text-white ">Ali Kapper</h1>
                 <p className=" text-2xl lg:text-xl text-white font-Montserrat text-center">
                   BarberShop & HairSalon

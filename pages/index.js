@@ -66,7 +66,7 @@ function Home() {
         ></div>
         <div className="h-full lg:w-[40%]  flex items-center justify-center">
           <div className="h-[90%] lg:h-[70%] w-[85%]   flex flex-col items-center justify-evenly">
-            <div className="h-[50%] flex flex-col items-center justify-between">
+            <div className="xl:h-[50%] h-[40%] flex flex-col items-center justify-between">
               <img
                 src="/icons/comb.png"
                 alt=""
@@ -81,7 +81,7 @@ function Home() {
                 className="h-[4rem] lg:h-[8rem]"
               />
             </div>
-            <div className="flex flex-col justify-between h-[50%]">
+            <div className="flex flex-col justify-between xl:h-[50%] h-[40%]">
               <p className="text-lg lg:text-2xl font-semibold text-center lg:text-left font-Montserrat">
                 From childhood, we have embraced this profession. We learned not
                 only to do, but to perfect!
