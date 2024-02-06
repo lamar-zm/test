@@ -2,21 +2,22 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+
 :root {
   --font-Rye: 'Rye', sans-serif;
   --font-Montserrat: 'Montserrat', sans-serif;
+  --font-messiri: 'El Messiri', arial;
 }
 
-.font-Rye {
-  font-family: var(--font-Rye);
+.font-messiri {
+  font-family: var(--font-messiri);
 }
 
-.font-Montserrat {
-  font-family: var(--font-Montserrat);
-}
-html{
+html {
   font-size: 10px;
 }
+
 .line {
   height: 0.2rem;
   width: 100%;

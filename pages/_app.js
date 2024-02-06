@@ -1,20 +1,15 @@
 import "@/styles/globals.css";
-import { Rye, Montserrat } from "next/font/google";
-
-const rye = Rye({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-Rye",
-});
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-Montserrat",
-});
+import { useEffect } from "react";
+import "@fontsource/el-messiri";
+import "@/styles/CustomFont.css";
 
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    // Add any additional font-related configuration or operations here
+  }, []);
+
   return (
-    <main className={`${rye.variable} ${montserrat.variable}`}>
+    <main className="font-Rye font-Montserrat font-messiri">
       <Component {...pageProps} />
     </main>
   );
