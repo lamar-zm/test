@@ -1,7 +1,6 @@
 import "@/styles/globals.css";
 import { useEffect } from "react";
 import "@fontsource/el-messiri";
-import "@/styles/CustomFont.css";
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
